@@ -1,0 +1,14 @@
+<!-- src/app/app.component.html -->
+<div>
+  <h1>Cafeteria App</h1>
+
+  <h2>Produtos</h2>
+  <ul>
+    <li *ngFor="let produto of produtos">{{ produto.nome }} - R${{ produto.preco }}</li>
+  </ul>
+
+  <h2>Vendas</h2>
+  <ul>
+    <li *ngFor="let venda of vendas">{{ venda.total }} - {{ venda.data }}</li>
+  </ul>
+</div>
